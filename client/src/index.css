@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* design tokens */
+@theme {
+  --color-primary: var(--color-indigo-600);
+  --color-primary-hover: var(--color-indigo-700);
+  --color-primary-soft: var(--color-indigo-50);
+  --color-surface: var(--color-white);
+  --color-canvas: var(--color-slate-100);
+  --color-border: var(--color-slate-300);
+  --color-text: var(--color-slate-900);
+  --color-text-muted: var(--color-slate-600);
+  --color-sidebar: var(--color-slate-900);
+  --color-sidebar-text: var(--color-slate-300);
+  --color-success: var(--color-emerald-600);
+  --color-success-soft: var(--color-emerald-50);
+  --color-danger: var(--color-red-600);
+  --color-danger-soft: var(--color-red-50);
+}
+
+@layer base {
+  body {
+    @apply bg-canvas text-text antialiased;
+  }
+}
